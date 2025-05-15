@@ -29,7 +29,7 @@ export const updateProfilePicture = async (req, res) => {
 };
 export const register = async (req, res) => {
   try {
-    console.log("Received Data:", req.body);
+  //  console.log("Received Data:", req.body);
     const { username, email, password, role } = req.body;
 
     const existingUser = await User.findOne({ email });
